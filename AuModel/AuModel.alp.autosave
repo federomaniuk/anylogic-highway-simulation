@@ -398,22 +398,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[uniform_discr(0, 4)]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635201981306</Id>
-					<Name><![CDATA[initRoad1]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[uniform_discr(0, 7)]]></Code>
+							<Code><![CDATA[uniform_discr(0, 2)]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -457,7 +442,7 @@
 						<ElementClass><![CDATA[Road]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
 						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ circunvalacionANorte1, evaPeron0, pelleARosario, circunvalacionASur1, AutopistaCordobaARosario0 }]]></Code>
+							<Code><![CDATA[{ circunvalacionANorte1, AutopistaCordobaARosario0, circunvalacionASur1 }]]></Code>
 						</CollectionInitializer>
 					</Properties>
 
@@ -475,7 +460,7 @@
 						<ElementClass><![CDATA[Road]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
 						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ circunvalacionASur7, circunvalacionANorte7, evaPeron0, circunvalacionANorte1, circunvalacionASur1, autopistaRosarioCordoba4 }]]></Code>
+							<Code><![CDATA[{ circunvalacionASur7, evaPeron0, autopistaRosarioCordoba4, circunvalacionANorte7, mendoza6, AntartidaArgentina3 }]]></Code>
 						</CollectionInitializer>
 					</Properties>
 
@@ -1304,6 +1289,9 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[selectNextRoad();]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -7408,6 +7396,7 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 				<RoadStopline>
 					<Id>1631196403058</Id>
 					<Name><![CDATA[stopLine56]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -8308,6 +8297,7 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 				<RoadStopline>
 					<Id>1631210464144</Id>
 					<Name><![CDATA[stopLine61]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -9011,6 +9001,7 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 				<RoadStopline>
 					<Id>1631196220838</Id>
 					<Name><![CDATA[stopLine52]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -20775,6 +20766,7 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 				<RoadStopline>
 					<Id>1631202243826</Id>
 					<Name><![CDATA[stopLine59]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -25826,13 +25818,17 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>23.251055302864188</X><Y>-7.648499095521856</Y></Point>
-						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>24.50277504648698</X><Y>4.961251356387309</Y></Point>
+						<Point><X>33.267047483231885</X><Y>6.735816010066511</Y></Point>
+						<Point><X>8.764272436744903</X><Y>1.7745646536792021</Y></Point>
+						<Point><X>57.769822529718866</X><Y>11.697067366453823</Y></Point>
 						<Point><X>41.695431481591186</X><Y>8.442370939648185</Y></Point>
-						<Point><X>31.90475234562291</X><Y>6.40703262464416</Y></Point>
+						<Point><X>17.192656435104205</X><Y>3.481119583260873</Y></Point>
 						<Point><X>23.251055302864188</X><Y>-7.648499095521856</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
+					<CustomPoints>true</CustomPoints>
 				</LaneConnector>
 				<LaneConnector SourceId="1631213607212" TargetId="1631573754946">
 					<Id>1631573754954</Id>
@@ -25847,13 +25843,14 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>21.704167845343363</X><Y>0.20052244819703446</Y></Point>
-						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>24.50277504648698</X><Y>4.961251356387285</Y></Point>
 						<Point><X>41.77681467607363</X><Y>8.458849174592842</Y></Point>
-						<Point><X>31.98613554010535</X><Y>6.42351085958876</Y></Point>
+						<Point><X>17.274039629586646</X><Y>3.4975978182055574</Y></Point>
 						<Point><X>21.704167845343363</X><Y>0.20052244819703446</Y></Point>
 					</Points>
 					<SourceLane>1</SourceLane>
 					<TargetLane>1</TargetLane>
+					<CustomPoints>true</CustomPoints>
 				</LaneConnector>
 				<LaneConnector SourceId="1631213607212" TargetId="1631573749891">
 					<Id>1631573754957</Id>
@@ -25893,6 +25890,9 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-13.32110889210162</X><Y>-20.5187257332214</Y></Point>
 						<Point><X>-0.6437046835153524</X><Y>-9.979260708109564</Y></Point>
+						<Point><X>-6.818459021511458E-4</X><Y>-0.536045302721958</Y></Point>
+						<Point><X>-0.6189973868845554</X><Y>9.444820686348708</Y></Point>
+						<Point><X>0.6176336950802531</X><Y>-10.516911291792622</Y></Point>
 						<Point><X>5.103221997089349</X><Y>-4.43202281917354</Y></Point>
 						<Point><X>-4.687457138878926</X><Y>-6.467361134177565</Y></Point>
 						<Point><X>5.103221997089349</X><Y>-4.43202281917354</Y></Point>
@@ -25902,6 +25902,31 @@ endRoad=uniform_discr(0, carDisposeRoads.size()-1);]]></Body>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
+					<CustomPoints>true</CustomPoints>
+				</LaneConnector>
+				<LaneConnector SourceId="1631573749891" TargetId="1631213607212">
+					<Id>1635204452784</Id>
+					<Name><![CDATA[laneConnector356]]></Name>
+					<X>5628.737700325614</X><Y>-276.96631051996576</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-5.337700325614605</X><Y>-21.03368948003424</Y></Point>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-0.0023059292134348652</X><Y>-0.035748487433806986</Y></Point>
+						<Point><X>-0.0023059292134348652</X><Y>-0.035748487433806986</Y></Point>
+						<Point><X>-0.6460106127287872</X><Y>-10.01500919554337</Y></Point>
+						<Point><X>-25.494980713436235</X><Y>-29.083233471950166</Y></Point>
+						<Point><X>-15.683703783787678</X><Y>-27.149624150048624</Y></Point>
+						<Point><X>-5.337700325614605</X><Y>-21.03368948003424</Y></Point>
+					</Points>
+					<SourceLane>1</SourceLane>
+					<TargetLane>1</TargetLane>
 				</LaneConnector>
 			</Presentation>
 
