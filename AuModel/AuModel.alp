@@ -34795,11 +34795,5 @@ CarW++;]]></Code>
 		<VersionMinor>0</VersionMinor>
 		<VersionBuild>5</VersionBuild>
     </RequiredLibraryReference>
-    <RequiredLibraryReference>
-		<LibraryName><![CDATA[highway_junction]]></LibraryName>
-		<VersionMajor>0</VersionMajor>
-		<VersionMinor>0</VersionMinor>
-		<VersionBuild>0</VersionBuild>
-    </RequiredLibraryReference>
 </Model>
 </AnyLogicWorkspace>
