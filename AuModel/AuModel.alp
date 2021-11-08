@@ -113,7 +113,8 @@
 			<TrafficLight>
 				<Id>1631580991266</Id>
 				<Name><![CDATA[mendozaBoliviatrafficLight]]></Name>
-				<X>6090</X><Y>-300</Y>
+				<ExcludeFromBuild>true</ExcludeFromBuild>
+				<X>6040</X><Y>-790</Y>
 				<Label><X>0</X><Y>-20</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
@@ -143,8 +144,9 @@
 			<TrafficLight>
 				<Id>1631581832640</Id>
 				<Name><![CDATA[mendozaGuatemalaTrafficLight]]></Name>
-				<X>5960</X><Y>-210</Y>
-				<Label><X>0</X><Y>-20</Y></Label>
+				<ExcludeFromBuild>true</ExcludeFromBuild>
+				<X>6060</X><Y>-700</Y>
+				<Label><X>-45</X><Y>-25</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
 				<ShowLabel>true</ShowLabel>
@@ -173,7 +175,8 @@
 			<TrafficLight>
 				<Id>1631582927539</Id>
 				<Name><![CDATA[mendozaBrasilAtrafficLight]]></Name>
-				<X>6300</X><Y>-300</Y>
+				<ExcludeFromBuild>true</ExcludeFromBuild>
+				<X>6185</X><Y>-855</Y>
 				<Label><X>0</X><Y>-20</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
@@ -204,8 +207,9 @@
 			<TrafficLight>
 				<Id>1631583687274</Id>
 				<Name><![CDATA[mendozaJuanPabloIITrafficLight]]></Name>
-				<X>6230</X><Y>-210</Y>
-				<Label><X>0</X><Y>-20</Y></Label>
+				<ExcludeFromBuild>true</ExcludeFromBuild>
+				<X>6195</X><Y>-770</Y>
+				<Label><X>-15</X><Y>-25</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
 				<ShowLabel>true</ShowLabel>
@@ -239,7 +243,8 @@
 			<TrafficLight>
 				<Id>1631655683137</Id>
 				<Name><![CDATA[trafficLightEva]]></Name>
-				<X>5960</X><Y>-300</Y>
+				<ExcludeFromBuild>true</ExcludeFromBuild>
+				<X>6050</X><Y>-855</Y>
 				<Label><X>0</X><Y>-20</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
@@ -317,7 +322,7 @@
 			<TrafficLight>
 				<Id>1636069525071</Id>
 				<Name><![CDATA[prioridadPaso]]></Name>
-				<X>6190</X><Y>210</Y>
+				<X>6690</X><Y>-490</Y>
 				<Label><X>0</X><Y>-20</Y></Label>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>true</PresentationFlag>
@@ -340,78 +345,6 @@
 			</TrafficLight>
 			<Variables>
 				<Variable Class="PlainVariable">
-					<Id>1634073124513</Id>
-					<Name><![CDATA[selectedViewArea]]></Name>
-					<X>1310</X><Y>2840</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[ViewArea]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[view2D]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1634073316969</Id>
-					<Name><![CDATA[cameraIdx]]></Name>
-					<X>1310</X><Y>2780</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1634073338269</Id>
-					<Name><![CDATA[timer]]></Name>
-					<X>1310</X><Y>2800</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[javax.swing.Timer]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1634073998431</Id>
-					<Name><![CDATA[cameras]]></Name>
-					<X>1310</X><Y>2760</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Camera3D[]]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[new Camera3D[] { camera, camera1, camera2, camera3, camera4, camera5, cameraMoving }]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1634073998436</Id>
-					<Name><![CDATA[selectedCar]]></Name>
-					<X>1310</X><Y>2820</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Vehicle]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[null]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
 					<Id>1635201472697</Id>
 					<Name><![CDATA[initRoad]]></Name>
 					<X>7155</X><Y>-340</Y>
@@ -429,7 +362,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635201988285</Id>
 					<Name><![CDATA[endRoad]]></Name>
-					<X>7155</X><Y>-240</Y>
+					<X>7155</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -444,7 +377,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635291834426</Id>
 					<Name><![CDATA[CarW]]></Name>
-					<X>7355</X><Y>-330</Y>
+					<X>7355</X><Y>-340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -456,7 +389,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1636231906793</Id>
 					<Name><![CDATA[endRoadCircunvalacion]]></Name>
-					<X>7390</X><Y>-40</Y>
+					<X>7355</X><Y>-229</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -471,7 +404,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1636233459265</Id>
 					<Name><![CDATA[CarsFixingDerecha]]></Name>
-					<X>7155</X><Y>-110</Y>
+					<X>7155</X><Y>-200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -483,7 +416,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1636233468248</Id>
 					<Name><![CDATA[CarsFixingIzquierda]]></Name>
-					<X>7155</X><Y>-75</Y>
+					<X>7155</X><Y>-165</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -492,10 +425,130 @@
 						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636334571187</Id>
+					<Name><![CDATA[selectedViewArea]]></Name>
+					<X>7160</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[ViewArea]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[view2D]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636334571189</Id>
+					<Name><![CDATA[cameraIdx]]></Name>
+					<X>7160</X><Y>-30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636334571191</Id>
+					<Name><![CDATA[timer]]></Name>
+					<X>7160</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[javax.swing.Timer]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636334571193</Id>
+					<Name><![CDATA[cameras]]></Name>
+					<X>7160</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Camera3D[]]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new Camera3D[] { camera, camera1, camera2, camera3, camera4, camera5, cameraMoving }]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636334571195</Id>
+					<Name><![CDATA[selectedCar]]></Name>
+					<X>7160</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Vehicle]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636337221773</Id>
+					<Name><![CDATA[stoppedCars]]></Name>
+					<X>7360</X><Y>-70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636337762095</Id>
+					<Name><![CDATA[queueLength]]></Name>
+					<X>7360</X><Y>-40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636339196064</Id>
+					<Name><![CDATA[carsSpeed]]></Name>
+					<X>7360</X><Y>-10</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636340373007</Id>
+					<Name><![CDATA[CarsOnFixingArea]]></Name>
+					<X>7360</X><Y>-120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1636233900699</Id>
 					<Name><![CDATA[tiempoAvancePermitido]]></Name>
-					<X>7380</X><Y>-150</Y>
+					<X>7156</X><Y>-130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -519,7 +572,7 @@
 				<Variable Class="Parameter">
 					<Id>1636233915874</Id>
 					<Name><![CDATA[tiempoAvanceBloqueado]]></Name>
-					<X>7380</X><Y>-120</Y>
+					<X>7156</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -561,7 +614,7 @@
 				<Variable Class="CollectionVariable">
 					<Id>1635201625298</Id>
 					<Name><![CDATA[carDisposeRoads]]></Name>
-					<X>7155</X><Y>-290</Y>
+					<X>7155</X><Y>-310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -579,7 +632,7 @@
 				<Variable Class="CollectionVariable">
 					<Id>1636231906742</Id>
 					<Name><![CDATA[carDisposeRoadsAutopista]]></Name>
-					<X>7390</X><Y>-90</Y>
+					<X>7355</X><Y>-269</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -599,7 +652,8 @@
 				<Connector>
 					<Id>1635201361458</Id>
 					<Name><![CDATA[connector]]></Name>
-					<X>6140</X><Y>-60</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>6180</X><Y>-600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -632,7 +686,8 @@
 				<Connector>
 					<Id>1635201365032</Id>
 					<Name><![CDATA[connector1]]></Name>
-					<X>6290</X><Y>-60</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>6330</X><Y>-600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -665,7 +720,7 @@
 				<Connector>
 					<Id>1636068214022</Id>
 					<Name><![CDATA[connector2]]></Name>
-					<X>6030</X><Y>15</Y>
+					<X>6070</X><Y>-540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -698,7 +753,7 @@
 				<Connector>
 					<Id>1636068216715</Id>
 					<Name><![CDATA[connector3]]></Name>
-					<X>6290</X><Y>15</Y>
+					<X>6330</X><Y>-540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -731,7 +786,7 @@
 				<Connector>
 					<Id>1636231804507</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>6030</X><Y>140</Y>
+					<X>6070</X><Y>-470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -764,7 +819,7 @@
 				<Connector>
 					<Id>1636231804517</Id>
 					<Name><![CDATA[connector5]]></Name>
-					<X>6330</X><Y>140</Y>
+					<X>6370</X><Y>-470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -798,41 +853,10 @@
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[void]]></ReturnType>
-					<Id>1634073163536</Id>
-					<Name><![CDATA[switchCamera]]></Name>
-					<X>1410</X><Y>2760</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[cameraIdx = (cameraIdx + 1) % cameras.length;
-window3d.setCamera(cameras[cameraIdx], true, cameras[cameraIdx] == cameraMoving ? 0 : 5000);]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1634073198040</Id>
-					<Name><![CDATA[navigate]]></Name>
-					<X>1410</X><Y>2780</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[viewArea]]></Name>
-						<Type><![CDATA[ViewArea]]></Type>
-					</Parameter>
-					<Body><![CDATA[selectedViewArea = viewArea;
-viewArea.navigateTo();
-groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1635203325331</Id>
 					<Name><![CDATA[selectNextRoad]]></Name>
-					<X>7355</X><Y>-290</Y>
+					<X>7355</X><Y>-310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -865,12 +889,43 @@ default:
 					<ReturnType><![CDATA[int]]></ReturnType>
 					<Id>1636234610832</Id>
 					<Name><![CDATA[countCarsFixingArea]]></Name>
-					<X>7150</X><Y>-150</Y>
+					<X>7155</X><Y>-237</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[return CarsFixingIzquierda + CarsFixingDerecha;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[void]]></ReturnType>
+					<Id>1636334571182</Id>
+					<Name><![CDATA[switchCamera]]></Name>
+					<X>7356</X><Y>-190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[cameraIdx = (cameraIdx + 1) % cameras.length;
+window3d.setCamera(cameras[cameraIdx], true, cameras[cameraIdx] == cameraMoving ? 0 : 5000);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1636334571185</Id>
+					<Name><![CDATA[navigate]]></Name>
+					<X>7360</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[viewArea]]></Name>
+						<Type><![CDATA[ViewArea]]></Type>
+					</Parameter>
+					<Body><![CDATA[selectedViewArea = viewArea;
+viewArea.navigateTo();
+groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -897,72 +952,9 @@ default:
 
 			<EmbeddedObjects>
 				<EmbeddedObject>
-					<Id>1630775661756</Id>
-					<Name><![CDATA[carDisposeAUEO2]]></Name>
-					<X>180</X><Y>1080</Y>
-					<Label><X>-30</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-							<ClassName><![CDATA[CarDispose]]></ClassName>
-							<ItemName><![CDATA[1424352404712]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
 					<Id>1634076965372</Id>
 					<Name><![CDATA[roadNetworkDescriptor]]></Name>
-					<X>5980</X><Y>200</Y>
+					<X>6510</X><Y>-490</Y>
 					<Label><X>-40</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1040,9 +1032,15 @@ default:
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onStop]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[stoppedCars++;queueLength+=car.length;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onResumeMoving]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[stoppedCars--;queueLength-=car.length;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onClickCar]]></Name>
@@ -1103,7 +1101,8 @@ default:
 				<EmbeddedObject>
 					<Id>1635201338624</Id>
 					<Name><![CDATA[carSource]]></Name>
-					<X>6000</X><Y>-60</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>6040</X><Y>-600</Y>
 					<Label><X>-20</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1262,7 +1261,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1635201359818</Id>
 					<Name><![CDATA[carMoveTo]]></Name>
-					<X>6140</X><Y>-70</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>6180</X><Y>-610</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -1358,7 +1358,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1635201363561</Id>
 					<Name><![CDATA[carDispose]]></Name>
-					<X>6290</X><Y>-60</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>6330</X><Y>-600</Y>
 					<Label><X>-26</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1424,7 +1425,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200852</Id>
 					<Name><![CDATA[carSourcePelle]]></Name>
-					<X>6000</X><Y>15</Y>
+					<X>6040</X><Y>-540</Y>
 					<Label><X>-20</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1583,7 +1584,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200879</Id>
 					<Name><![CDATA[carMoveToAutopista]]></Name>
-					<X>6140</X><Y>5</Y>
+					<X>6180</X><Y>-550</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -1679,7 +1680,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200902</Id>
 					<Name><![CDATA[carDisposeAutopista]]></Name>
-					<X>6290</X><Y>15</Y>
+					<X>6330</X><Y>-540</Y>
 					<Label><X>-26</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1745,8 +1746,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804308</Id>
 					<Name><![CDATA[carAutopistaSurANorte]]></Name>
-					<X>6000</X><Y>140</Y>
-					<Label><X>-20</X><Y>-35</Y></Label>
+					<X>6040</X><Y>-470</Y>
+					<Label><X>-50</X><Y>34</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -1904,7 +1905,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804388</Id>
 					<Name><![CDATA[carMoveFromCircunToAutopista]]></Name>
-					<X>6160</X><Y>130</Y>
+					<X>6200</X><Y>-480</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -2000,8 +2001,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804459</Id>
 					<Name><![CDATA[carDisposeCircunvalacion]]></Name>
-					<X>6330</X><Y>140</Y>
-					<Label><X>-26</X><Y>-30</Y></Label>
+					<X>6370</X><Y>-470</Y>
+					<Label><X>-74</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -6230,7 +6231,7 @@ CarW++;]]></Code>
 							<Parameter>
 								<Name><![CDATA[onCarPassed]]></Name>
 								<Value Class="CodeValue">
-									<Code><![CDATA[CarsFixingDerecha++;]]></Code>
+									<Code><![CDATA[CarsFixingDerecha++;CarsOnFixingArea++;]]></Code>
 								</Value>
 							</Parameter>
 						</Parameters>
@@ -6310,7 +6311,7 @@ CarW++;]]></Code>
 							<Parameter>
 								<Name><![CDATA[onCarPassed]]></Name>
 								<Value Class="CodeValue">
-									<Code><![CDATA[CarsFixingIzquierda++;]]></Code>
+									<Code><![CDATA[CarsFixingIzquierda++;CarsOnFixingArea++;]]></Code>
 								</Value>
 							</Parameter>
 						</Parameters>
@@ -26819,6 +26820,9 @@ CarW++;]]></Code>
 						<Parameters>
 							<Parameter>
 								<Name><![CDATA[onCarPassed]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[CarsOnFixingArea--;]]></Code>
+								</Value>
 							</Parameter>
 						</Parameters>
 						<ReplicationFlag>false</ReplicationFlag>
@@ -32397,128 +32401,10 @@ CarW++;]]></Code>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
-    			<StackChart>
-					<Id>1635291875125</Id>
-					<Name><![CDATA[totalAutos]]></Name>
-					<X>6835</X><Y>-330</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1635321600000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<DataItem>
-					<Id>0</Id>
-					<Expression><![CDATA[CarW]]></Expression>
-					<Color>-16711936</Color>
-					<Expression2Flag>true</Expression2Flag>
-						<Title><![CDATA[Cantidad de autos total]]></Title>
-					</DataItem>
-					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
-					<ScaleType>AUTO</ScaleType>
-					<Bars>
-						<Direction>UP</Direction>
-						<RelativeWidth>0.8</RelativeWidth>
-					</Bars>
-    			</StackChart>
-    			<StackChart>
-					<Id>1635293278146</Id>
-					<Name><![CDATA[autosZonaArreglo]]></Name>
-					<X>6555</X><Y>-330</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1635321600000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>210</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>120</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>SOUTH</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>true</ShowLegend>
-					<DataItem>
-					<Id>1635293278143</Id>
-					<Expression><![CDATA[countCarsFixingArea()]]></Expression>
-					<Color>-16728065</Color>
-					<Expression2Flag>true</Expression2Flag>
-						<Title><![CDATA[Cantidad de autos (ZA)]]></Title>
-					</DataItem>
-					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
-					<ScaleType>AUTO</ScaleType>
-					<Bars>
-						<Direction>UP</Direction>
-						<RelativeWidth>0.8</RelativeWidth>
-					</Bars>
-    			</StackChart>
     			<TimePlot>
 					<Id>1635294096895</Id>
 					<Name><![CDATA[plot]]></Name>
-					<X>6555</X><Y>-125</Y>
+					<X>6150</X><Y>-140</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32720,7 +32606,7 @@ CarW++;]]></Code>
     			<TimePlot>
 					<Id>1636233540835</Id>
 					<Name><![CDATA[plot1]]></Name>
-					<X>6815</X><Y>-125</Y>
+					<X>6440</X><Y>-140</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32787,7 +32673,7 @@ CarW++;]]></Code>
     			<TimePlot>
 					<Id>1636233568084</Id>
 					<Name><![CDATA[plot2]]></Name>
-					<X>6550</X><Y>80</Y>
+					<X>6720</X><Y>-130</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32855,7 +32741,7 @@ CarW++;]]></Code>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1636233979055</Id>
 					<Name><![CDATA[tiempoPermitido]]></Name>
-					<X>6900</X><Y>140</Y>
+					<X>5980</X><Y>-150</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32869,7 +32755,7 @@ CarW++;]]></Code>
 						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[0]]></MinValue>
-						<MaxValue><![CDATA[120]]></MaxValue>
+						<MaxValue><![CDATA[300]]></MaxValue>
 						<LinkTo>true</LinkTo>
 						<Link>tiempoAvancePermitido</Link>
 					</ExtendedProperties>
@@ -32878,7 +32764,7 @@ CarW++;]]></Code>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1636234024018</Id>
 					<Name><![CDATA[tiempoBloqueado]]></Name>
-					<X>6900</X><Y>230</Y>
+					<X>5980</X><Y>-60</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32892,7 +32778,7 @@ CarW++;]]></Code>
 						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[0]]></MinValue>
-						<MaxValue><![CDATA[120]]></MaxValue>
+						<MaxValue><![CDATA[300]]></MaxValue>
 						<LinkTo>true</LinkTo>
 						<Link>tiempoAvanceBloqueado</Link>
 					</ExtendedProperties>
@@ -32900,7 +32786,7 @@ CarW++;]]></Code>
 				<Text>
 					<Id>1636234081185</Id>
 					<Name><![CDATA[text]]></Name>
-					<X>6890</X><Y>120</Y>
+					<X>5970</X><Y>-170</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32921,7 +32807,7 @@ CarW++;]]></Code>
 				<Text>
 					<Id>1636234101163</Id>
 					<Name><![CDATA[text1]]></Name>
-					<X>6890</X><Y>210</Y>
+					<X>5970</X><Y>-80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -32939,6 +32825,341 @@ CarW++;]]></Code>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+    			<TimePlot>
+					<Id>1636340760598</Id>
+					<Name><![CDATA[plot3]]></Name>
+					<X>6160</X><Y>-360</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636358400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Cantidad actual de autos (ZA)]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-29696</Color>
+					<Expression2><![CDATA[CarsOnFixingArea]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>1000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1636340845648</Id>
+					<Name><![CDATA[plot4]]></Name>
+					<X>6430</X><Y>-360</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636358400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Cantidad de autos total (ZA)]]></Title>
+					<Id>1636340845645</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-9404272</Color>
+					<Expression2><![CDATA[countCarsFixingArea()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>1000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1636340870381</Id>
+					<Name><![CDATA[plot5]]></Name>
+					<X>6710</X><Y>-360</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636358400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Cantidad de autos en Modelo]]></Title>
+					<Id>1636340870378</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-2354116</Color>
+					<Expression2><![CDATA[CarW]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>1000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1636341012922</Id>
+					<Name><![CDATA[plot6]]></Name>
+					<X>6270</X><Y>80</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636358400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Longitud de cola de autos detenidos]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-9404272</Color>
+					<Expression2><![CDATA[queueLength]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>1000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1636341046454</Id>
+					<Name><![CDATA[plot7]]></Name>
+					<X>6580</X><Y>80</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636358400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Cantidad de autos detenidos]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-9728477</Color>
+					<Expression2><![CDATA[stoppedCars]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>1000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
 			</Presentation>
 
 				</Level>
@@ -33233,8 +33454,8 @@ CarW++;]]></Code>
 				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
 				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
-					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					<Code><![CDATA[60]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
 				</VelocityCode>
 				<PhysicalLength Class="CodeUnitValue">
 					<Code><![CDATA[1]]></Code>
