@@ -653,7 +653,7 @@
 					<Id>1635201361458</Id>
 					<Name><![CDATA[connector]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>6180</X><Y>-600</Y>
+					<X>6180</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -687,7 +687,7 @@
 					<Id>1635201365032</Id>
 					<Name><![CDATA[connector1]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>6330</X><Y>-600</Y>
+					<X>6330</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -720,7 +720,7 @@
 				<Connector>
 					<Id>1636068214022</Id>
 					<Name><![CDATA[connector2]]></Name>
-					<X>6070</X><Y>-540</Y>
+					<X>6070</X><Y>-560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -747,13 +747,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>110</X><Y>0</Y></Point>
+						<Point><X>130</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1636068216715</Id>
 					<Name><![CDATA[connector3]]></Name>
-					<X>6330</X><Y>-540</Y>
+					<X>6370</X><Y>-560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -780,13 +780,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-110</X><Y>0</Y></Point>
+						<Point><X>-130</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1636231804507</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>6070</X><Y>-470</Y>
+					<X>6070</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -819,7 +819,7 @@
 				<Connector>
 					<Id>1636231804517</Id>
 					<Name><![CDATA[connector5]]></Name>
-					<X>6370</X><Y>-470</Y>
+					<X>6370</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -850,6 +850,39 @@
 					</Points>
 				</Connector>
 			</Connectors>
+			<Events>
+				<Event>
+					<Id>1636495919638</Id>
+					<Name><![CDATA[EndSimulation]]></Name>
+					<X>7360</X><Y>20</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MONTH]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1622793600000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MONTH]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[TimeLastEvent == 120]]></Condition>
+					</Properties>
+					<Action><![CDATA[finishSimulation();]]></Action>
+				</Event>
+			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
@@ -954,7 +987,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<EmbeddedObject>
 					<Id>1634076965372</Id>
 					<Name><![CDATA[roadNetworkDescriptor]]></Name>
-					<X>6510</X><Y>-490</Y>
+					<X>6450</X><Y>-700</Y>
 					<Label><X>-40</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1102,7 +1135,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<Id>1635201338624</Id>
 					<Name><![CDATA[carSource]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>6040</X><Y>-600</Y>
+					<X>6040</X><Y>-630</Y>
 					<Label><X>-20</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1262,7 +1295,7 @@ CarW++;]]></Code>
 					<Id>1635201359818</Id>
 					<Name><![CDATA[carMoveTo]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>6180</X><Y>-610</Y>
+					<X>6180</X><Y>-640</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
@@ -1359,7 +1392,7 @@ CarW++;]]></Code>
 					<Id>1635201363561</Id>
 					<Name><![CDATA[carDispose]]></Name>
 					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>6330</X><Y>-600</Y>
+					<X>6330</X><Y>-630</Y>
 					<Label><X>-26</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1425,8 +1458,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200852</Id>
 					<Name><![CDATA[carSourcePelle]]></Name>
-					<X>6040</X><Y>-540</Y>
-					<Label><X>-20</X><Y>-35</Y></Label>
+					<X>6040</X><Y>-560</Y>
+					<Label><X>-30</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -1528,6 +1561,21 @@ CarW++;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maxAcceleration]]></Name>
+							<Value Class="DatabaseQueryCodeUnitValue">
+								<Value Class="DatabaseQueryCodeValue">
+									<Type>SELECT_UNIQUE_VALUE</Type>
+									<TableReference>
+									</TableReference>
+									<Condition>
+										<ColumnReference>
+										</ColumnReference>
+										<Operator>EQUALS</Operator>
+									</Condition>
+									<ColumnReference>
+									</ColumnReference>
+								</Value>
+								<Unit Class="AccelerationUnits"><![CDATA[MPS_SQ]]></Unit>;
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maxDeceleration]]></Name>
@@ -1588,8 +1636,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200879</Id>
 					<Name><![CDATA[carMoveToAutopista]]></Name>
-					<X>6180</X><Y>-550</Y>
-					<Label><X>-25</X><Y>-25</Y></Label>
+					<X>6200</X><Y>-570</Y>
+					<Label><X>-40</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -1684,8 +1732,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636068200902</Id>
 					<Name><![CDATA[carDisposeAutopista]]></Name>
-					<X>6330</X><Y>-540</Y>
-					<Label><X>-26</X><Y>-30</Y></Label>
+					<X>6370</X><Y>-560</Y>
+					<Label><X>-50</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -1750,7 +1798,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804308</Id>
 					<Name><![CDATA[carAutopistaSurANorte]]></Name>
-					<X>6040</X><Y>-470</Y>
+					<X>6040</X><Y>-460</Y>
 					<Label><X>-50</X><Y>34</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1913,8 +1961,8 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804388</Id>
 					<Name><![CDATA[carMoveFromCircunToAutopista]]></Name>
-					<X>6200</X><Y>-480</Y>
-					<Label><X>-25</X><Y>-25</Y></Label>
+					<X>6200</X><Y>-470</Y>
+					<Label><X>-65</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -2009,7 +2057,7 @@ CarW++;]]></Code>
 				<EmbeddedObject>
 					<Id>1636231804459</Id>
 					<Name><![CDATA[carDisposeCircunvalacion]]></Name>
-					<X>6370</X><Y>-470</Y>
+					<X>6370</X><Y>-460</Y>
 					<Label><X>-74</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28686,7 +28734,7 @@ CarW++;]]></Code>
 					<LineColor/>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>90</Width>
+					<Width>104</Width>
 					<Height>50</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-4144960</FillColor>
@@ -28707,7 +28755,7 @@ CarW++;]]></Code>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
-					<Text><![CDATA[Logic]]></Text>
+					<Text><![CDATA[Lógica]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>26</Size>
@@ -28821,9 +28869,9 @@ CarW++;]]></Code>
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
-						<Button><![CDATA[Static camera]]></Button>
-						<Button><![CDATA[Camera on car]]></Button>
-						<Button><![CDATA[Moving]]></Button>
+						<Button><![CDATA[Cámara estática]]></Button>
+						<Button><![CDATA[Cámara en auto]]></Button>
+						<Button><![CDATA[Cámara dinámica]]></Button>
 						<LinkTo>false</LinkTo>
 					</ExtendedProperties>
 				</Control>
@@ -32471,8 +32519,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3600]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -32673,8 +32721,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3600]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -32740,8 +32788,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>100</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3600]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -32847,11 +32895,11 @@ CarW++;]]></Code>
 					<OccurrenceDate>1636358400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Code><![CDATA[0.5]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>260</Width>
@@ -32879,7 +32927,7 @@ CarW++;]]></Code>
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowUnits>MINUTE</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
@@ -32895,8 +32943,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>1000</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[60]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -32962,8 +33010,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>1000</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3600]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -33029,8 +33077,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>1000</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[3600]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -33048,11 +33096,11 @@ CarW++;]]></Code>
 					<OccurrenceDate>1636358400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Code><![CDATA[0.5]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>260</Width>
@@ -33080,7 +33128,7 @@ CarW++;]]></Code>
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowUnits>MINUTE</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
@@ -33096,8 +33144,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>1000</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[60]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
@@ -33115,11 +33163,11 @@ CarW++;]]></Code>
 					<OccurrenceDate>1636358400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						<Code><![CDATA[0.5]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>260</Width>
@@ -33147,7 +33195,7 @@ CarW++;]]></Code>
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowUnits>MINUTE</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
@@ -33163,8 +33211,8 @@ CarW++;]]></Code>
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
-					<SamplesToKeep>1000</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[1000]]></TimeWindowExpression>
+					<SamplesToKeep>3600</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[60]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
